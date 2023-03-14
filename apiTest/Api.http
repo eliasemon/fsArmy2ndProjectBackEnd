@@ -1,0 +1,43 @@
+POST http://localhost:3000/reg 
+content-type: application/json
+
+{
+    "data" : {
+        "name": "Emon",
+        "gender": "Male",
+        "email": "sdfs@gmail.com",
+        "phoneNumber": "855258251312342",
+        "googleMeetLink": "saewsdsdfsesessadfk.com"
+    }
+}
+
+###
+PUT  http://localhost:3000/userinfoUpdate
+content-type: application/json
+
+{
+    "data" : {
+        "name": "Elias",
+        "googleMeetLink": "sasdesessadfk.com",
+        "avaterUrl" : "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_960_720.png"
+    }
+}
+
+###
+GET   http://localhost:3000/getUserData
+content-type: application/json
+
+###
+GET http://localhost:3000/catagories
+content-type: application/json
+
+###
+POST  http://localhost:3000/catagories
+content-type: application/json
+
+{
+    "data" : [
+        {"_id" : "C3E" , "name" : "C3E"},
+        {"_id" : "E3E" , "name" : "E3E"}
+    ]
+}
